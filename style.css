@@ -2,8 +2,9 @@
     background-color: #102410 !important;
 }
 
-.nav-item {
+.nav-item a{
     font-size: 20px;
+    color: white !important;
 }
 
 .card-img-top {
@@ -33,4 +34,15 @@
 #hand-rankings-img {
     width: 100%;
     height: auto;
+}
+
+h1, h2 {
+    /* border-bottom: 1px solid black; */
+}
+
+.dict-letter-header {
+    color: #304430;
+    border-bottom: 3px solid #304430;
+    background-image: linear-gradient(to right, rgba(48,68,48,0.3) , white);
+    padding-left: 5px;
 }
