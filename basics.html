@@ -1,18 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Poker Basics</title>
 
-    <link rel="stylesheet" href="jquery.min.js">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
 </head>
 
 <body>
 
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-darkGreen">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar10">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="basics.html">How to Play</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="advanced.html">Advanced Strategy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Find a Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coaching.html">Private Coaching</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slideshow for example hand -->
+    <div class="container">
+        <h1>
+            <center>The Basics</center>
+        </h1>
+        <p>Hello this is a paragraph taht I am writing for the example of seeing who teh information will be displayed
+            on the screen I am curious to see the reuslts I would hope that it is centered but it is possible that ti
+            tis not center in which case that is ok too</p>
+        <h2>
+            <center>Part 1: Objectives/Rules</center>
+        </h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>In Poker, your goal is to have the best 5-card hand as possible. Here, we are focusing on the most
+                    popular form of poker, Texas Hold'em.
+                    In Texas Hold'em, each player gets dealt two cards face-down, and there are also 5 "community cards"
+                    in the middle of the table that every player can use.
+                    Players have several rounds of betting as cards are dealt, and after all betting is finished, the
+                    players reveal their hands and the best hand wins. The Hand Rankings are as follows, from best to
+                    worst:
+                </p>
+                <ol>
+                    <li><strong>Royal Flush</strong>: (10 J Q K A) of the same suit. the best hand in poker.</li>
+                    <li><strong>Straight Flush</strong>: 5 consecutive cards, all of the same suit.</li>
+                    <li><strong>Four of a Kind</strong>: 4 cards of the same value.</li>
+                    <li><strong>Full House</strong>: 3 cards with one value, and 2 cards of another value.</li>
+                    <li><strong>Flush</strong>: 5 cards with the same suit</li>
+                    <li><strong>Straight</strong>: 5 consecutive cards in order. Ace can be considered a high or low
+                        card.</li>
+                    <li><strong>Three of a kind</strong>: 3 cards with the same value.</li>
+                    <li><strong>Two Pair</strong>: two seperate pairs of cards.</li>
+                    <li><strong>One Pair</strong>: two cards that are the same value.</li>
+                    <li><strong>High Card</strong>: if none of the above, the highest card in your hand matters.</li>
+
+                </ol>
+            </div>
+            <div class="col-md-6">
+                <a href="https://upload.wikimedia.org/wikipedia/commons/1/1c/Poker_Hand_Rankings_Chart.jpg"><img
+                        id="hand-rankings-img" src="img/handRanks.jpg"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p>Heres some text I put in the website<br>I put<br>some line breaks in there <br>too</p>
+            </div>
+            <div class="col-md-8">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/Table_Preflop.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Preflop</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Table_Flop.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Flop</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Table_Turn.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Turn</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Table_River.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>River</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Table_Showdown.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Showdown</h5>
+                                <p>After the final round of betting completes, the players show their hands. Three of a
+                                    kind
+                                    wins the pot here.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="jquery.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </body>
-</html> 
+
+</html>
+
+<!-- Image sources
+Poker Hand Rankings: https://commons.wikimedia.org/wiki/File:Poker_Hand_Rankings_Chart.jpg
+-->
