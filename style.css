@@ -41,7 +41,7 @@
     height: auto;
 }
 
-.dict-letter-header {
+.section-header {
     color: #304430;
     border-bottom: 3px solid #304430;
     background-image: linear-gradient(to right, rgba(48,68,48,0.3) , white);
