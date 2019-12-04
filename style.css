@@ -2,6 +2,10 @@
     background-color: #102410 !important;
 }
 
+body {
+    background-color: #E0F4E0 !important;
+}
+
 #main-nav .nav-item a{
     font-size: 20px;
     color: white !important;
@@ -12,8 +16,9 @@
     font-weight: bold;
     color: #304430 !important;
 }
-.card-img-top {
-    object-fit: cover;
+
+.card {
+    margin-bottom: 2vh;
 }
 
 .hero {
@@ -44,11 +49,15 @@
 .section-header {
     color: #304430;
     border-bottom: 3px solid #304430;
-    background-image: linear-gradient(to right, rgba(48,68,48,0.3) , white);
+    background-image: linear-gradient(to right, rgba(48,68,48,0.3) ,rgba(48,68,48,0.0));
     padding-left: 5px;
 }
 
 .definition {
     font-weight: bold;
     color: #304430;
+}
+
+.casino-info {
+    border: 2px solid #304430;
 }
