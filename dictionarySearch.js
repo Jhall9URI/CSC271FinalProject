@@ -30,17 +30,24 @@ function searchForTerms()
         }
     }
 
-    //if a term was found, print out it's full definition.
+    //if a term was found, print out it's full definition onto the modal
     if (found)
     {
-        document.getElementById("example").innerHTML = definition.parentElement.innerHTML;
-        definition.style.backgroundColor = "yellow";  
+        document.getElementById("def-modal-body").innerHTML = definition.parentElement.innerHTML;
+
+        //use jQuery to show the modal on screen
+        $('#definition-modal').modal('show'); 
+
+        definition.style.backgroundColor = "yellow";
+        var firstLetter = definition.innerHTML[0];
+        var sectionID = "dict-" + firstLetter.toUpperCase();
+        
+        //jump to the specific section on the screen
+        window.location.hash = sectionID;
     }
 
     else
     {
         //tell the user that no term was found
     }
-
-
 }

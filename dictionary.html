@@ -72,8 +72,24 @@
         </nav>
     </div>
 
+    <!-- modal for dictionary definitino popup -->
+    <div class="modal fade" id="definition-modal" tabindex="0" role="dialog" aria-labelledby="#def-modal-title">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="def-modal-title">Definition</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="def-modal-body" tabindex="0">tests</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <h3 id="example">TEST</h3>
     <!-- dictionary terms -->
     <div class="container">
         <h2 id="dict-A" class="section-header">A</h2>
@@ -96,9 +112,9 @@
             Button. The first blind—the small blind—is usually half the amount of the other one—the Big Blind.</p>
         <p><span class="definition">Bluff</span>: The act of a player betting out and trying to win the pot when they
             don’t believe that they have the best hand.</p>
-        <p><span class="definition"> Button</span>: also called the dealers button, it is a marker that gets passed
+        <p><span class="definition">Button</span>: also called the dealers button, it is a marker that gets passed
             around the table clockwise after every hand. The player that currently has the button gets to act last
-            during every round of betting—a distinct advantage.</p>
+            during every round of betting, a distinct advantage.</p>
 
         <h2 id="dict-C" class="section-header">C</h2>
         <p><span class="definition">Call</span>: Matching another player’s bet/raise amount.</p>
