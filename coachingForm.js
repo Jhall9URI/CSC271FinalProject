@@ -1,17 +1,69 @@
-//functions to make
+//variables for HTML elements
+var formTitle = document.getElementById("coach-form-title");
+var coachForm = document.getElementById("coach-form");
+var submitBtn = document.getElementById("submit-btn");
+
+//form groups
+var hoursGroup = document.getElementById("hoursGroup");
+var priceGroup = document.getElementById("priceGroup");
+var rateGroup = document.getElementById("rateGroup");
+
+//form inputs
+var hoursInput = document.getElementById("numHoursInput");
+var priceInput = document.getElementById("priceEstimate");
+var rateInput = document.getElementById("rateInput");
 
 //when a coach is selected, change the name and mailto: action of the form
-function setupContactForm(element) {
+function setupContactForm(element) 
+{
 
     //get the name/email from the current card (aka the parent div)
     var name = element.parentNode.getElementsByClassName("coach-name")[0].innerHTML;
     var email = element.parentNode.getElementsByClassName("coach-email")[0].innerHTML;
 
     //set the modal form's title to include the coach's name
-    var formTitle = document.getElementById("coach-form-title");
     formTitle.innerHTML = "Hire " + name;
 
     //set the modal form's action so it emails the coach's email address
-    var coachForm = document.getElementById("coach-form");
     coachForm.action = "mailto:" + email;
+
+    //make sure that the rate element is hidden and the hours/estimate are visible
+    rateGroup.hidden = true;
+
+    priceGroup.hidden = priceInput.disabled = false;
+    hoursGroup.hidden = hoursInput.disabled = false;
+
+    //TODO retrieve the rate value from the card's html
+
+}
+
+//set up the form so that potential coaches can apply online
+function setupApplication() 
+{
+    //change the form labels so it applies to coach applications
+
+    formTitle.innerHTML = "Apply to be a Coach";
+    coachForm.action = "mailto:baseEmail@fakeDomain.com";
+    submitBtn.innerHTML = "Submit Application";
+
+    //remove numHours/priceEstimate, and only display the hourly rate iput
+    rateGroup.hidden = false;
+    priceGroup.hidden = priceInput.disabled = true;
+    hoursGroup.hidden = hoursInput.disabled = true;
+}
+
+function getEstimate()
+{
+    //ensure that the numHours and rate have values,
+    // if either are empty, the estimate is 0
+    if (rateInput.value.length == 0 || hoursInput.value.length == 0)
+    {
+        priceInput.value = "$0";
+    }
+
+    else
+    {
+        var estimate = rateInput.value * hoursInput.value;
+        priceInput.value = "$"+estimate;
+    }
 }
