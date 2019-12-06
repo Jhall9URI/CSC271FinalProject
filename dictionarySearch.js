@@ -1,16 +1,10 @@
-//retrieve the keyword from the search bar
-//strip any leading/trailing whitespace
-//check every definition for a match
-//whichever is the first match, change the background of the definition to yellow
-//maybe create a modal with teh definition instead
-//if the name does not match the definition, set its background to whatever the original is
-//get the first letter of the name and jump to it using the jump link
+var errorMsg = document.getElementById("search-error");
+var searchBar = document.getElementById("search-input");
 
 function searchForTerms() 
 {
-
     //get the keyword from the search bar.
-    var keyword = document.getElementById("search-input").value.trim();
+    var keyword = searchBar.value.trim();
 
     //retrieve the list of dictionary terms
     var terms = document.getElementsByClassName("definition");
@@ -48,6 +42,15 @@ function searchForTerms()
 
     else
     {
-        //tell the user that no term was found
+        //display an error message if false;
+        errorMsg.innerHTML = "Term Not Found";
+        searchBar.classList.add("invalid");
     }
+}
+
+searchBar.onfocus = function() 
+{
+    this.classList.remove("invalid");
+    errorMsg.innerHTML = "";
+    
 }

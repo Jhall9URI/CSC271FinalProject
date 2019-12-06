@@ -61,3 +61,11 @@ body {
 .casino-info {
     border: 2px solid #304430;
 }
+
+.invalid {
+    border-color: red;
+}
+
+#search-error {
+    color: red;
+}

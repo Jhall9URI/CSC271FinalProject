@@ -52,17 +52,18 @@
                     <h5 class="m-0 p-2">Jump to Section: </h5>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#dict-A">A-E</a>
+                    <a class="nav-link" href="#dict-A" aria-label="jump to secion A-E">A-E</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#dict-F">F-N</a>
+                    <a class="nav-link" href="#dict-F" aria-label="jump to secion F-N">F-N</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#dict-O">O-V</a>
+                    <a class="nav-link" href="#dict-O" aria-label="jump to secion O-V">O-V</a>
                 </li>
             </ul>
             <div class="input-group col-lg-4 ml-auto">
-                <input class="form-control py-2" type="search" placeholder="search" id="search-input">
+                <div id="search-error"></div>
+                <input class="form-control py-2" type="search" placeholder="search for a term" id="search-input">
                 <span class="input-group-append">
                     <button class="btn btn-outline-secondary" type="button" onclick="searchForTerms()">
                         <i class="fa fa-search"></i>
