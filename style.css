@@ -4,6 +4,7 @@
 
 body {
     background-color: #E0F4E0 !important;
+    margin-bottom: 30px;
 }
 
 #main-nav .nav-item a{
@@ -68,4 +69,10 @@ body {
 
 #search-error {
     color: red;
+}
+
+.footer {
+    width: 100%;    
+    color: white;
+    background-color: #102410;
 }
