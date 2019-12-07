@@ -20,6 +20,7 @@ function setupContactForm(element)
     //get the name/email from the current card (aka the parent div)
     var name = element.parentNode.getElementsByClassName("coach-name")[0].innerHTML;
     var email = element.parentNode.getElementsByClassName("coach-email")[0].innerHTML;
+    var rate = element.parentNode.getElementsByClassName("rate")[0].innerHTML;
 
     //set the modal form's title to include the coach's name
     formTitle.innerHTML = "Hire " + name;
@@ -27,14 +28,13 @@ function setupContactForm(element)
     //set the modal form's action so it emails the coach's email address
     coachForm.action = "mailto:" + email;
 
-    //make sure that the rate element is hidden and the hours/estimate are visible
+    //make sure that the rate element is hidden, and set its value to the coach's rate
+    rateInput.value = rate;
     rateGroup.hidden = true;
 
+    //make sure that the price estimate the num hours input are visible/enabled
     priceGroup.hidden = priceInput.disabled = false;
     hoursGroup.hidden = hoursInput.disabled = false;
-
-    //TODO retrieve the rate value from the card's html
-
 }
 
 //set up the form so that potential coaches can apply online
@@ -46,8 +46,11 @@ function setupApplication()
     coachForm.action = "mailto:baseEmail@fakeDomain.com";
     submitBtn.innerHTML = "Submit Application";
 
-    //remove numHours/priceEstimate, and only display the hourly rate iput
+    //reset the rate input value, and make the input field visible
+    rateInput.value = "";
     rateGroup.hidden = false;
+
+    //the coach doesn't need to request hours or a price, so hide those elements
     priceGroup.hidden = priceInput.disabled = true;
     hoursGroup.hidden = hoursInput.disabled = true;
 }
