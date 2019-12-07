@@ -27,30 +27,49 @@ function searchForTerms()
     //if a term was found, print out it's full definition onto the modal
     if (found)
     {
+        document.getElementById("def-modal-title").innerHTML = "Definition Found";
         document.getElementById("def-modal-body").innerHTML = definition.parentElement.innerHTML;
 
         //use jQuery to show the modal on screen
         $('#definition-modal').modal('show'); 
-
+        
+        //highlight the specific definition on the page
         definition.style.backgroundColor = "yellow";
+
+        //jump to the specific section on the screen
         var firstLetter = definition.innerHTML[0];
         var sectionID = "dict-" + firstLetter.toUpperCase();
-        
-        //jump to the specific section on the screen
         window.location.hash = sectionID;
+
+        //set the tab navigationt onto the modal
+        document.getElementById("def-modal-body").focus();
     }
 
     else
     {
-        //display an error message if false;
-        errorMsg.innerHTML = "Term Not Found";
+        //display an error message if the term wasn't found;
+        document.getElementById("def-modal-title").innerHTML = "Definition Not Found";
+        document.getElementById("def-modal-body").innerHTML = "no definition found for \"" + keyword + "\"";
+
+        //display the modal with the error message
+        $('#definition-modal').modal('show');
+        document.getElementById("def-modal-body").focus();
         searchBar.classList.add("invalid");
+
+    }
+}
+
+
+//sets the search bar to be called when the user presses "enter"
+searchBar.onkeypress = function(event)
+{
+    if (event.keyCode == 13 || event.which == 13)
+    {
+        searchForTerms();
     }
 }
 
 searchBar.onfocus = function() 
 {
     this.classList.remove("invalid");
-    errorMsg.innerHTML = "";
-    
 }
