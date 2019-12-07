@@ -64,7 +64,7 @@ body {
 }
 
 .invalid {
-    border-color: red;
+    border-color: red !important;
 }
 
 #search-error {
