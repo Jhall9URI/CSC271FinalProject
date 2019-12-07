@@ -23,7 +23,7 @@ function setupContactForm(element)
     var rate = element.parentNode.getElementsByClassName("rate")[0].innerHTML;
 
     //set the modal form's title to include the coach's name
-    formTitle.innerHTML = "Hire " + name;
+    formTitle.innerHTML = "Coach: " + name;
 
     //set the modal form's action so it emails the coach's email address
     coachForm.action = "mailto:" + email;
