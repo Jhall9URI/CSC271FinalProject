@@ -39,30 +39,32 @@
         </div>
     </nav>
 
-    <h1 class="text-center my-4">Private Poker Coaching</h1>
+    <h1 class="text-center my-4" tabindex="0">Private Poker Coaching</h1>
     <!-- links to available coaches -->
     <div class="container">
 
-        <h5 class="text-center">Coaches observe your play, either through live observation or through video replay, and offer personalized
-            review sessions to help you fix your mistakes and become a better player. Contact a poker coach below to
-            help
-            you take your game to the next level</h5>
-        <h5 class="text-center">(<strong class="text-danger">NOTE:</strong> This website does not facilitate transations between coach/client. contact coach for
-            details on payment.)</h5>
+        <h5 class="text-center" tabindex="0">Coaches observe your play, either through live observation or through video
+            replay, and offer personalized review sessions to help you fix your mistakes and become a better player.
+            Contact a poker coach below to help you take your game to the next level <br><br>
+            (<strong class="text-danger">NOTE:</strong> This website does not facilitate transations between
+            coach/client. Contact coach for details on payment.)</h5>
+
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/320x220" alt="Card image cap">
+                    <img class="card-img-top" src="https://via.placeholder.com/320x220" alt="Coach Profile Image placeholder">
                     <div class="card-body">
-                        <h5 class="card-title coach-name">John Doe</h5>
-                        <p class="card-subtitle coach-email">johndoe@fakeEmail.com</p>
-                        <p class="card-text">
-                            <ul>
-                                <li>$<span class="rate">30</span>/hr</li>
-                                <li>available 7 days a week</li>
-                                <li>Texas Hold'em/Omaha, Limit/No Limit</li>
-                            </ul>
-                        </p>
+                        <div tabindex="0">
+                            <h5 class="card-title coach-name">John Doe</h5>
+                            <p class="card-subtitle coach-email">johndoe@fakeEmail.com</p>
+                            <p class="card-text">
+                                <ul>
+                                    <li>$<span class="rate">30</span>/hr</li>
+                                    <li>available 7 days a week</li>
+                                    <li>Texas Hold'em/Omaha, Limit/No Limit</li>
+                                </ul>
+                            </p>
+                        </div>
                         <a href="#" class="btn btn-primary" onclick="setupContactForm(this)" data-toggle="modal"
                             data-target="#coachModal">Contact This Coach</a>
                     </div>
@@ -71,17 +73,19 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/320x220" alt="Card image cap">
+                    <img class="card-img-top" src="https://via.placeholder.com/320x220" alt="Coach Profile Image placeholder">
                     <div class="card-body">
-                        <h5 class="card-title coach-name">Roy L. Flush</h5>
-                        <p class="card-subtitle coach-email">roylflush@fakeEmail.com</p>
-                        <p class="card-text">
-                            <ul>
-                                <li>$<span class="rate">50</span>/hr</li>
-                                <li>Available Sat/Sun Only</li>
-                                <li>Texas Holdem, No Limit</li>
-                            </ul>
-                        </p>
+                        <div tabindex="0">
+                            <h5 class="card-title coach-name">Roy L. Flush</h5>
+                            <p class="card-subtitle coach-email">roylflush@fakeEmail.com</p>
+                            <p class="card-text">
+                                <ul>
+                                    <li>$<span class="rate">50</span>/hr</li>
+                                    <li>Available Sat/Sun Only</li>
+                                    <li>Texas Holdem, No Limit</li>
+                                </ul>
+                            </p>
+                        </div>
                         <a href="#" class="btn btn-primary" onclick="setupContactForm(this)" data-toggle="modal"
                             data-target="#coachModal">Contact This Coach</a>
                     </div>
@@ -89,17 +93,19 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/320x220" alt="Card image cap">
+                    <img class="card-img-top" src="https://via.placeholder.com/320x220" alt="Coach Profile Image placeholder">
                     <div class="card-body">
-                        <h5 class="card-title coach-name">Jane Doe</h5>
-                        <p class="card-subtitle coach-email">janeDoe@fakeEmail.com</p>
-                        <p class="card-text">
-                            <ul>
-                                <li>$<span class="rate">70</span>/hr</li>
-                                <li>Available M-F</li>
-                                <li>Texas Hold'em. Limit/No Limit</li>
-                            </ul>
-                        </p>
+                        <div tabindex="0">
+                            <h5 class="card-title coach-name">Jane Doe</h5>
+                            <p class="card-subtitle coach-email">janeDoe@fakeEmail.com</p>
+                            <p class="card-text">
+                                <ul>
+                                    <li>$<span class="rate">70</span>/hr</li>
+                                    <li>Available M-F</li>
+                                    <li>Texas Hold'em. Limit/No Limit</li>
+                                </ul>
+                            </p>
+                        </div>
                         <a href="#" class="btn btn-primary" onclick="setupContactForm(this)" data-toggle="modal"
                             data-target="#coachModal">Contact This Coach</a>
                     </div>
@@ -108,8 +114,9 @@
         </div>
 
         <!-- apply to be a coach -->
-        <h2 class="text-center">Already an experienced poker player? Apply to be a coach yourself!</h2>
-        <h4 class="text-center">If approved, you can have your information displayed on this apge, so you can help
+        <h2 class="text-center" tabindex="0">Already an experienced poker player? Apply to be a coach yourself!</h2>
+        <h4 class="text-center" tabindex="0">If approved, you can have your information displayed on this page, so you
+            can help
             others improve their skills at the poker table.</h4>
         <div class="row">
             <div class="col-sm-8 m-auto">
@@ -120,7 +127,7 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal fade" id="coachModal" role="dialog" aria-labelledby="coach-form-title">
+    <div class="modal fade" id="coachModal" role="dialog" tabindex="0" aria-labelledby="coach-form-title">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <form id="coach-form" method="post" action="mailto:thePokerRoom@fakedomain.com" enctype="text/plain"
@@ -129,7 +136,6 @@
                     <!-- Modal Header -->
                     <div class="modal-header">
                         <h4 class="modal-title" id="coach-form-title">Coach: (coach name here)</h4>
-                        <button type="button" class="close" data-dismiss="modal">×</button>
                     </div>
 
                     <!-- Modal body -->
@@ -138,12 +144,12 @@
                         <!-- input for name and email -->
                         <div class="form-group">
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Name</label>
+                                <label for="nameInput">Name</label>
                                 <input type="text" class="form-control" name="name" id="nameInput"
                                     placeholder="Enter Name here" required>
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Email address</label>
+                                <label for="emailInput">Email address</label>
                                 <input type="email" class="form-control" name="email" id="emailInput"
                                     placeholder="name@example.com" required>
                             </div>
@@ -192,15 +198,17 @@
                         <!-- number of hours requested and estimated cost -->
                         <div class="form-row">
                             <div id="hoursGroup" class="form-group col-xs">
-                                <label for="exampleFormControlInput1">Num Hours</label>
-                                <input type="number" class="form-control" name="numHours" id="numHoursInput" oninput="getEstimate()" min="0">
+                                <label for="numHoursInput">Num Hours</label>
+                                <input type="number" class="form-control" name="numHours" id="numHoursInput"
+                                    oninput="getEstimate()" min="0">
                             </div>
                             <div id="priceGroup" class="form-group col-xs">
-                                <label for="exampleFormControlInput1">Estimated Price</label>
-                                <input type="text" class="form-control" name="priceEstimate" id="priceEstimate" readonly>
+                                <label for="priceEstimate">Estimated Price</label>
+                                <input type="text" class="form-control" name="priceEstimate" id="priceEstimate"
+                                    readonly>
                             </div>
                             <div id="rateGroup" class="form-group col-xs" hidden>
-                                <label for="exampleFormControlInput1">Hourly Rate</label>
+                                <label for="rateInput">Hourly Rate</label>
                                 <input type="number" class="form-control" name="rate" id="rateInput">
                             </div>
                         </div>
@@ -233,4 +241,5 @@
     <script src="jquery.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

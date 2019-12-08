@@ -35,6 +35,9 @@ function setupContactForm(element)
     //make sure that the price estimate the num hours input are visible/enabled
     priceGroup.hidden = priceInput.disabled = false;
     hoursGroup.hidden = hoursInput.disabled = false;
+
+    //set the focus to the modal's title
+    formTitle.focus();
 }
 
 //set up the form so that potential coaches can apply online
@@ -53,6 +56,9 @@ function setupApplication()
     //the coach doesn't need to request hours or a price, so hide those elements
     priceGroup.hidden = priceInput.disabled = true;
     hoursGroup.hidden = hoursInput.disabled = true;
+
+    //set the focus to the modal's title
+    formTitle.focus();
 }
 
 function getEstimate()
