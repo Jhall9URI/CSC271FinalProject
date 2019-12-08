@@ -22,14 +22,12 @@ function setupContactForm(element)
     var email = element.parentNode.getElementsByClassName("coach-email")[0].innerHTML;
     var rate = element.parentNode.getElementsByClassName("rate")[0].innerHTML;
 
-    //set the modal form's title to include the coach's name
+    //set the modal form's title and button for coach request form
     formTitle.innerHTML = "Coach: " + name;
+    submitBtn.innerHTML = "Submit Request";
 
     //set the modal form's action so it emails the coach's email address
     coachForm.action = "mailto:" + email;
-
-    //change the submit button to "submit request"
-    submitBtn.innerHTML = "Submit Request";
 
     //make sure that the rate element is hidden, and set its value to the coach's rate
     rateInput.value = rate;
@@ -37,7 +35,10 @@ function setupContactForm(element)
 
     //make sure that the price estimate the num hours input are visible/enabled
     priceGroup.hidden = priceInput.disabled = false;
+    priceInput.value = "$0";
+
     hoursGroup.hidden = hoursInput.disabled = false;
+    hoursInput.value = 0;
 
     //set the focus to the modal's title
     formTitle.focus();
