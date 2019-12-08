@@ -1,3 +1,6 @@
+/*********************************
+ General website css
+ *******************************/
 .bg-darkGreen, .btn-primary {
     background-color: #102410 !important;
 }
@@ -7,9 +10,42 @@ body {
     margin-bottom: 30px;
 }
 
+.section-header {
+    color: #304430;
+    border-bottom: 3px solid #304430;
+    background-image: linear-gradient(to right, rgba(48,68,48,0.3) ,rgba(48,68,48,0.0));
+    padding-left: 5px;
+}
+
+.card {
+    margin-bottom: 2vh;
+}
+
+.invalid {
+    border-color: red !important;
+}
+
+.footer {
+    width: 100%;    
+    color: white;
+    background-color: #102410;
+}
+
+/*********************************
+ style for navbar
+ *******************************/
 #main-nav .nav-item a{
     font-size: 20px;
     color: white !important;
+}
+
+#main-nav .nav-item a:hover, #main-nav .nav-item a:focus {
+    text-decoration: underline !important;
+}
+
+.navbar-brand {
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 24px !important;
 }
 
 #dictionary-nav .nav-item a {
@@ -18,25 +54,32 @@ body {
     color: #304430 !important;
 }
 
-.card {
-    margin-bottom: 2vh;
-}
-
+/*********************************
+ style for index.html hero image
+ *******************************/
 .hero {
     color: white;
     text-shadow: 2px 2px 4px #000000;
-    background-image: url("img/personPlayingPoker.jpg");
+    /* slightly darken background image for better text contrast */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4),
+                        rgba(0, 0, 0, 0.4)), 
+                        url("img/personPlayingPoker.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vh;
 }
 
-.hero .container {
-    background-color: rgba(0,0,0,0.35);
-    border-radius: 10px;
+/*********************************
+ style for basics.html page
+ ********************************/
+ #hand-rankings-img {
+    width: 100%;
+    height: auto;
 }
 
+/* carousel style */
 .carousel-caption h5, .carousel-caption p{
     color: black;
     font-weight: bold;
@@ -47,42 +90,23 @@ body {
     padding-bottom: 5px !important;
 }
 
-#hand-rankings-img {
-    width: 100%;
-    height: auto;
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
 }
 
-.section-header {
-    color: #304430;
-    border-bottom: 3px solid #304430;
-    background-image: linear-gradient(to right, rgba(48,68,48,0.3) ,rgba(48,68,48,0.0));
-    padding-left: 5px;
-}
 
+/*********************************
+ styles for dictionary.html page
+ ********************************/
 .definition {
     font-weight: bold;
     color: #304430;
 }
 
+/*********************************
+ styles for findAGame.html page
+ ********************************/
 .casino-info {
     border: 2px solid #304430;
-}
-
-.invalid {
-    border-color: red !important;
-}
-
-#search-error {
-    color: red;
-}
-
-.footer {
-    width: 100%;    
-    color: white;
-    background-color: #102410;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-    filter: invert(100%);
 }
