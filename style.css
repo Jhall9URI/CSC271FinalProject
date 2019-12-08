@@ -76,3 +76,8 @@ body {
     color: white;
     background-color: #102410;
 }
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
