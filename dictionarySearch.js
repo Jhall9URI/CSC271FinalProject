@@ -1,4 +1,3 @@
-var errorMsg = document.getElementById("search-error");
 var searchBar = document.getElementById("search-input");
 
 function searchForTerms() 
