@@ -28,6 +28,9 @@ function setupContactForm(element)
     //set the modal form's action so it emails the coach's email address
     coachForm.action = "mailto:" + email;
 
+    //change the submit button to "submit request"
+    submitBtn.innerHTML = "Submit Request";
+
     //make sure that the rate element is hidden, and set its value to the coach's rate
     rateInput.value = rate;
     rateGroup.hidden = true;
@@ -44,7 +47,6 @@ function setupContactForm(element)
 function setupApplication() 
 {
     //change the form labels so it applies to coach applications
-
     formTitle.innerHTML = "Apply to be a Coach";
     coachForm.action = "mailto:baseEmail@fakeDomain.com";
     submitBtn.innerHTML = "Submit Application";
