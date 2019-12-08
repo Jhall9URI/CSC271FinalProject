@@ -32,6 +32,11 @@ body {
     height: 40vh;
 }
 
+.hero .container {
+    background-color: rgba(0,0,0,0.35);
+    border-radius: 10px;
+}
+
 .carousel-caption h5, .carousel-caption p{
     color: black;
     font-weight: bold;
